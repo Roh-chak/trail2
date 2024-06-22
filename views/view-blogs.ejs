@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Blog</title>
+    <style>
+      /* Add this style to position the articles and thumbnails */
+.outer-container {
+  display: flex;
+}
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    max-width: 1200px;
+    margin: 20px 20px 0 150px;
+}
+
+article {
+    flex: 1;
+    margin-right: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.aside {
+  display: flex;
+}
+/* Rest of your existing styles */
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Blog</h1>
+    </header>
+  <div class="outer-container">
+    <div class="container">
+        <%if(locals.title && locals.content) {%>
+          <article>
+            <img src="https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-18354.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="article-content">
+                <h2><%=title%></h2>
+                <p class="date">Published on January 31, 2024</p>
+                <p><%=content%></p>
+                <a href="#">Read more</a>
+            </div>
+        </article>
+        <%}%>
+        <article>
+            <img src="https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-18354.jpg" alt="Thumbnail" class="thumbnail">
+            <div class="article-content">
+                <h2>How To Clear Cache On Twitter App: Complete Guide For Android And iOS</h2>
+                <p class="date">Published on January 31, 2024</p>
+                <p>Twitter is a popular social networking platform, and like all other social media apps, it takes up a lot of storage space on your device over time. Every time you use Twitter, a significant amount of cache memory is collected to improve the user experience. No matter the device or OS, the Twitter app on your phone builds cache memory so that you can still see some of the loaded content even while you are offline. Cache memory also facilitates quicker application loading, but over time it makes the application a little laggy and slower.</p>
+                <a href="#">Read more</a>
+            </div>
+        </article>
+
+        <article>
+          <img src="https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-65274.jpg" alt="Thumbnail 2" class="thumbnail">
+          <div class="article-content">
+              <h2>Another Blog Post</h2>
+              <p class="date">Published on February 1, 2024</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+              <a href="#">Read more</a>
+          </div>
+        </article>
+
+        <article>
+          <img src="https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-15418.jpg" alt="Thumbnail 2" class="thumbnail">
+          <div class="article-content">
+              <h2>Another Blog Post</h2>
+              <p class="date">Published on February 1, 2024</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+              <a href="#">Read more</a>
+          </div>
+      </article>
+
+      <article>
+        <img src="https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-18354.jpg" alt="Thumbnail" class="thumbnail">
+        <div class="article-content">
+            <h2>Blog Post Title</h2>
+            <p class="date">Published on January 31, 2024</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <a href="#">Read more</a>
+        </div>
+    </article>
+
+    <article>
+      <img src="https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-65274.jpg" alt="Thumbnail 2" class="thumbnail">
+      <div class="article-content">
+          <h2>Another Blog Post</h2>
+          <p class="date">Published on February 1, 2024</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+          <a href="#">Read more</a>
+      </div>
+    </article>
+
+    <article>
+      <img src="https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-15418.jpg" alt="Thumbnail 2" class="thumbnail">
+      <div class="article-content">
+          <h2>Another Blog Post</h2>
+          <p class="date">Published on February 1, 2024</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+          <a href="#">Read more</a>
+      </div>
+  </article>
+    </div>
+    <div>
+  <div class="aside">
+    <aside>
+      <h2>Recent Posts</h2>
+      <ul>
+          <li><a href="#">Post 1</a></li>
+          <li><a href="#">Post 2</a></li>
+          <!-- Add more recent posts here -->
+      </ul>
+    </aside>
+  </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

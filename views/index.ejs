@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogger</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('https://wallpaperaccess.com/full/2692031.jpg') no-repeat left top;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navigation Bar Styles */
+    nav {
+      background-color: rgba(255, 255, 255, 0.181); /* Make the navigation bar transparent */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #008000; /* Dark green border */
+    }
+
+    .logo {
+      border-radius: 50%;
+      width: 50px; /* Adjust as needed */
+      height: 50px; /* Adjust as needed */
+      object-fit: cover;
+    }
+
+    .brand {
+      font-size: 1.2em;
+      margin-left: 10px;
+      color: #008000; /* Dark green */
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #008000; /* Dark green */
+      font-weight: bold;
+    }
+
+    .create-btn, .view-blogs {
+      padding: 8px 16px;
+      border: 2px solid #008000; /* Dark green border */
+      border-radius: 5px;
+      background-color: #fff;
+      color: #008000; /* Dark green */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .main-content-text {
+      max-width: 400px;
+      text-align: right;
+      margin-left: 1rem; /* Add left margin of 1rem */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div>
+      <img src="your-logo.png" alt="Logo" class="logo">
+      <span class="brand">Blogerr</span>
+    </div>
+    <div class="nav-links">
+      <a href="/create" class="create-btn">Create</a>
+      <a href="/view-blogs" class="view-blogs">View Blogs</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="main-content-text">
+      <h1>Let's Just Share Something</h1>
+      <p>Welcome to Blogerr, where you can share your thoughts and experiences with the world. Connect with others through the power of words.</p>
+    </div>
+  </div>
+
+</body>
+</html>
